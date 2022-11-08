@@ -1,14 +1,14 @@
 create table customer (
 	customer_id varchar(20) primary key,
 	 customer_name varchar(20) not null,
-	  customer_tel int
+	  customer_tel numeric
 );
 
 
 create table product(
 	product_id varchar(20) primary key,
 	 product_name varchar(20) not null,
-	  price int
+	  price numeric check (price >= 0)
 );
 
 
