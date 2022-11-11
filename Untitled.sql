@@ -1,7 +1,7 @@
 create table customer (
 	customer_id varchar(20) primary key,
 	 customer_name varchar(20) not null,
-	  customer_tel numeric
+	  customer_tel int
 );
 
 
@@ -17,6 +17,7 @@ create table orders(
 	customer_id varchar(20),
 	 product_id varchar(20),
 	  quantity int,
+	   total amount float,
            constraint fk_customer_id Foreign key(customer_id) references customer(customer_id),
             constraint fk_product_id Foreign key(product_id) references product(product_id)
 );
