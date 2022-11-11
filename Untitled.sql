@@ -8,7 +8,7 @@ create table customer (
 create table product(
 	product_id varchar(20) primary key,
 	 product_name varchar(20) not null,
-	  price numeric check (price >= 0)
+	  price float check (price >= 0)
 );
 
 
